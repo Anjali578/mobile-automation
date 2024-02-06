@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Suite1" verbose="1" parallel="test"  thread-count="3" >
+    <listeners>
+        <listener class-name="com.sriram.mobile.automation.listner.Listeners"/>
+    </listeners>
+    <test name="ios">
+        <parameter name="deviceTpe" value="IOS"></parameter>
+        <classes>
+            <class name="com.sriram.mobile.automation.test.TestExample"/>
+        </classes>
+    </test>
+    <test name="ios16">
+        <parameter name="deviceTpe" value="IOS16"></parameter>
+        <classes>
+            <class name="com.sriram.mobile.automation.test.TestExample"/>
+        </classes>
+    </test>
+    <test name="android">
+        <parameter name="deviceTpe" value="Android"></parameter>
+        <classes>
+            <class name="com.sriram.mobile.automation.test.TestExample"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation group: 'org.testng', name: 'testng', version: '7.9.0'
+    testImplementation group: 'io.appium', name: 'java-client', version: '9.0.0'
+    implementation group: 'com.aventstack', name: 'extentreports', version: '5.1.1'
+    implementation group: 'commons-io', name: 'commons-io', version: '2.15.1'
+}
+
+test {
+    useTestNG()
+    options.suites("testng.xml")
+
+}
