@@ -20,6 +20,11 @@ import org.testng.annotations.Parameters;
 
 import com.sriram.mobile.automation.page.HomePage;
 
+/**
+ * 
+ * @author Anjalikumar
+ *
+ */
 //@Listeners({com.sriram.mobile.automation.listner.Listeners.class})
 public abstract class BaseTest {
     public AppiumDriver driver;
